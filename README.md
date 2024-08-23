@@ -97,8 +97,8 @@ docker-compose down -v
 This command stops the containers, removes them, and deletes the associated volumes.
 
 ## Additional Information
-Volumes: MySQL data is stored in a Docker volume named mysql_data, ensuring persistence between container restarts.
-Network: The services communicate over a custom Docker network named app-network.
+- Volumes: MySQL data is stored in a Docker volume named mysql_data, ensuring persistence between container restarts.
+- Network: The services communicate over a custom Docker network named app-network.
 
 ## Contributing
 If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request. Contributions are welcome!

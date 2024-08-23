@@ -25,7 +25,7 @@ Clone this repository to your local machine:
 git clone https://github.com/antoshdyade/php-apache-mysql-app.git
 cd php-apache-mysql-app
 
-###2. Set Up the Environment
+### 2. Set Up the Environment
 The project uses Docker Compose to manage the services (Apache, PHP, and MySQL). All you need to do is run:
 
 
@@ -37,7 +37,7 @@ Build and start the containers for the PHP-Apache web server and MySQL database.
 Set up the network between the services.
 Mount the html/ directory to /var/www/html in the Apache container.
 
-###3. Access the Application
+### 3. Access the Application
 Once the containers are up and running, you can access the application in your web browser:
 
 Main Page: http://localhost:8080
@@ -48,7 +48,7 @@ PHP Info: http://localhost:8080/info.php
 Database Connection Test: http://localhost:8080/dbtest.php
 
 
-###4. Database Configuration
+### 4. Database Configuration
 The MySQL database is automatically set up with the following credentials (as defined in docker-compose.yml):
 
 MySQL Root Password: example
@@ -69,12 +69,12 @@ To stop the running containers and clean up the environment, use:
 docker-compose down -v
 This command stops the containers, removes them, and deletes the associated volumes.
 
-##Additional Information
+## Additional Information
 Volumes: MySQL data is stored in a Docker volume named mysql_data, ensuring persistence between container restarts.
 Network: The services communicate over a custom Docker network named app-network.
 
-##Contributing
+## Contributing
 If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request. Contributions are welcome!
 
-##License
+## License
 This project is licensed under the MIT License.

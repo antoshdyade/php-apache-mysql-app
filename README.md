@@ -22,7 +22,7 @@ php-apache-mysql-app/
 │   └── logout.php        # (Optional) Script to handle user logout
 └── mysql_data/           # (Auto-generated) Directory for MySQL data storage
 
-```plaintext
+(```)
 
 
 ## Prerequisites

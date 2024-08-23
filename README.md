@@ -38,9 +38,10 @@ Ensure that you have Docker and Docker Compose installed on your system:
 
 Clone this repository to your local machine:
 
+```bash
 git clone https://github.com/antoshdyade/php-apache-mysql-app.git
 cd php-apache-mysql-app
-
+```
 ### 2. Set Up the Environment
 The project uses Docker Compose to manage the services (Apache, PHP, and MySQL). All you need to do is run:
 
@@ -57,12 +58,12 @@ Mount the html/ directory to /var/www/html in the Apache container.
 ### 3. Access the Application
 Once the containers are up and running, you can access the application in your web browser:
 
-Main Page: http://localhost:8080
-Register Page: http://localhost:8080/register.php
-Login Page: http://localhost:8080/login.php
-Welcome Page (Post-Login): http://localhost:8080/welcome.php
-PHP Info: http://localhost:8080/info.php
-Database Connection Test: http://localhost:8080/dbtest.php
+-Main Page: http://localhost:8080
+-Register Page: http://localhost:8080/register.php
+-Login Page: http://localhost:8080/login.php
+-Welcome Page (Post-Login): http://localhost:8080/welcome.php
+-PHP Info: http://localhost:8080/info.php
+-Database Connection Test: http://localhost:8080/dbtest.php
 
 
 ### 4. Database Configuration
@@ -73,14 +74,18 @@ Database Name: exampledb
 Database Schema
 To manually create the necessary table for user registration and login, use the following SQL command:
 
+```mysql
 CREATE TABLE users (
     id INT(11) AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL
 );
+```
+
+
 This command creates a users table with columns for user IDs, usernames, and hashed passwords.
 
-###5. Stopping and Cleaning Up
+### 5. Stopping and Cleaning Up
 To stop the running containers and clean up the environment, use:
 
 ```bash

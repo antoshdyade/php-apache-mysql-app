@@ -69,18 +69,23 @@ The MySQL database is automatically set up with the following credentials (as de
 MySQL Root Password: example
 Database Name: exampledb
 Database Schema
-To manually create the necessary table for user registration and login, use the following SQL command:
 
-```mysql
+Use following  command by connecting to the MySQL container using the following command:
+
+```bash
+docker exec -it mysql-db mysql -u root -p
+```
+Then, after entering the MySQL console, use the exampledb database and run the SQL command:
+
+```sql
+USE exampledb;
 CREATE TABLE users (
     id INT(11) AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL
 );
 ```
-
-
-This command creates a users table with columns for user IDs, usernames, and hashed passwords.
+This will creates a users table with columns for user IDs, usernames, and hashed passwords.
 
 ### 5. Stopping and Cleaning Up
 To stop the running containers and clean up the environment, use:

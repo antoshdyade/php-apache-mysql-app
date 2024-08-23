@@ -58,12 +58,12 @@ Mount the html/ directory to /var/www/html in the Apache container.
 ### 3. Access the Application
 Once the containers are up and running, you can access the application in your web browser:
 
--Main Page: http://localhost:8080
--Register Page: http://localhost:8080/register.php
--Login Page: http://localhost:8080/login.php
--Welcome Page (Post-Login): http://localhost:8080/welcome.php
--PHP Info: http://localhost:8080/info.php
--Database Connection Test: http://localhost:8080/dbtest.php
+- Main Page: http://localhost:8080
+- Register Page: http://localhost:8080/register.php
+- Login Page: http://localhost:8080/login.php
+- Welcome Page (Post-Login): http://localhost:8080/welcome.php
+- PHP Info: http://localhost:8080/info.php
+- Database Connection Test: http://localhost:8080/dbtest.php
 
 
 ### 4. Database Configuration

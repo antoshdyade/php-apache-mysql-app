@@ -6,7 +6,21 @@ This is a simple PHP application with a user registration and login system, runn
 
 ## Project Structure
 
-php-apache-mysql-app/ │ ├── docker-compose.yml # Docker Compose configuration ├── html/ # Directory containing PHP and HTML files │ ├── index.html # Main landing page │ ├── register.php # User registration script │ ├── login.php # User login script │ ├── welcome.php # Welcome page for logged-in users │ ├── dbtest.php # Script to test MySQL connection │ ├── info.php # PHP information page │ ├── config.php # Database configuration script │ └── logout.php # (Optional) Script to handle user logout └── mysql_data/ # (Auto-generated) Directory for MySQL data storage
+
+php-apache-mysql-app/
+│
+├── docker-compose.yml    # Docker Compose configuration
+├── html/                 # Directory containing PHP and HTML files
+│   ├── index.html        # Main landing page
+│   ├── register.php      # User registration script
+│   ├── login.php         # User login script
+│   ├── welcome.php       # Welcome page for logged-in users
+│   ├── dbtest.php        # Script to test MySQL connection
+│   ├── info.php          # PHP information page
+│   ├── config.php        # Database configuration script
+│   └── logout.php        # (Optional) Script to handle user logout
+└── mysql_data/           # (Auto-generated) Directory for MySQL data storage
+
 
 
 ## Prerequisites

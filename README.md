@@ -22,7 +22,7 @@ php-apache-mysql-app/
 │   └── logout.php        # (Optional) Script to handle user logout
 └── mysql_data/           # (Auto-generated) Directory for MySQL data storage
 
-(```)
+```
 
 
 ## Prerequisites
@@ -44,8 +44,9 @@ cd php-apache-mysql-app
 ### 2. Set Up the Environment
 The project uses Docker Compose to manage the services (Apache, PHP, and MySQL). All you need to do is run:
 
-
+```bash
 docker-compose up -d
+```
 
 This command will:
 
@@ -82,7 +83,10 @@ This command creates a users table with columns for user IDs, usernames, and has
 ###5. Stopping and Cleaning Up
 To stop the running containers and clean up the environment, use:
 
+```bash
 docker-compose down -v
+```
+
 This command stops the containers, removes them, and deletes the associated volumes.
 
 ## Additional Information

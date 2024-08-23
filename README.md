@@ -1,12 +1,13 @@
 # php-apache-mysql-app
 
+
 # PHP-Apache-MySQL Docker Application
 
 This is a simple PHP application with a user registration and login system, running on an Apache web server with a MySQL database. The entire environment is managed using Docker Compose.
 
 ## Project Structure
 
-
+```plaintext
 php-apache-mysql-app/
 │
 ├── docker-compose.yml    # Docker Compose configuration
